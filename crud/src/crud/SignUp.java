@@ -11,14 +11,12 @@ public class SignUp extends JFrame implements ActionListener {
     private JTextField txtNome, txtEndereco, txtContacto;
     private JPasswordField txtSenha;
     private JButton butRegistar, butCancelar;
-    private Vector vc;
     private Container cont;
 
-    public SignUp(Vector vector) {
+    public SignUp() {
         super("Criar Conta");
         cont = getContentPane();
         cont.setLayout(new GridLayout(5, 2, 0, 40));
-        vc = vector;
 
         lblNome = new JLabel("Nome");
         lblEndereco = new JLabel("Endereco");

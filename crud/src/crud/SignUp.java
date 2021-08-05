@@ -4,7 +4,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Vector;
 
 public class SignUp extends JFrame implements ActionListener {
     private JLabel lblNome, lblEndereco, lblContacto, lblSenha;
@@ -48,6 +47,11 @@ public class SignUp extends JFrame implements ActionListener {
 
         butRegistar.addActionListener(this);
         butCancelar.addActionListener(this);
+
+        setVisible(true);
+        setSize(300, 300);
+        setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+        setLocationRelativeTo(null);
     }
 
     public void actionPerformed(ActionEvent e) {

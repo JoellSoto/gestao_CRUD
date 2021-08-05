@@ -70,7 +70,7 @@ public class Login extends JFrame {
 
         lblCreate.addMouseListener(new MouseListener() {
             public void mouseClicked(MouseEvent ev) {
-                new SignUp();
+                new Update();
                 dispose();
             }
 
